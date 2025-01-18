@@ -1,10 +1,7 @@
 # Answers for tasks
 
 <h3>Day00_ex00:</h3>
-![alt text](/1/tasks/img/day00_ex00.png)
-![Screenshot](https://raw.githubusercontent.com/KaVoshnik/SQL_College/refs/heads/main/1/tasks/img/day00_ex00.png)
-
-![Screenshot](https://github.com/KaVoshnik/control_pj/blob/master/screenshot.png?raw=true)
+![Screenshot](https://github.com/KaVoshnik/control_pj/blob/master/1/tasks/img/day00_ex00.png)
 
 <h3>Day00_ex01:</h3>
 ![1](https://github.com/KaVoshnik/SQL_College/blob/main/1/tasks/img/day00_ex01.png?raw=true)
