@@ -1,7 +1,7 @@
 # Answers for tasks
 
 <h3>Day00_ex00:</h3>
-![alt text](img/day00_ex00.png)
+![alt text](/1/tasks/img/day00_ex00.png)
 
 <h3>Day00_ex01:</h3>
 ![1](https://github.com/KaVoshnik/SQL_College/blob/main/1/tasks/img/day00_ex01.png?raw=true)
