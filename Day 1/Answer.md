@@ -50,7 +50,7 @@ WHERE rn = 1
 ORDER BY pizza_name DESC;
 ```
 
-Day01_ex3:
+Day01_ex03:
 ![img](/Day%201/img/day01_ex03.png)
 
 ```sql
@@ -63,4 +63,24 @@ SELECT person_id, visit_date AS action_date
 FROM person_visits
 
 ORDER BY action_date ASC, person_id DESC;
+```
+
+Day01_ex04:
+![img](/Day%201/img/day01_ex04.png)
+
+```sql
+SELECT
+  person_id
+FROM
+  person_order
+WHERE
+  order_date = '2022-01-07'
+  AND person_id NOT IN (
+    SELECT
+      person_id
+    FROM
+      person_visits
+    WHERE
+      visit_date = '2022-01-07'
+  );
 ```
