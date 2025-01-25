@@ -146,3 +146,33 @@ ORDER BY
     po.order_date ASC,
     person_information ASC;
 ```
+
+Day01_ex08:
+![img](/Day%201/img/day01_ex08.png)
+
+```sql
+SELECT
+    order_date,
+    CONCAT(name, ' (age:', age, ')') AS person_information
+FROM
+    person_order NATURAL JOIN (
+    SELECT id AS person_id, name, age
+ FROM person
+  )
+ AS id
+ ORDER BY
+ order_date ASC,
+ person_information ASC;
+```
+
+Day01_ex09:
+![img](/Day%201/img/day01_ex09.png)
+
+```sql
+SELECT name
+FROM pizzeria
+WHERE id NOT IN (
+    SELECT DISTINCT pizzeria_id
+    FROM person_visits
+);
+```
