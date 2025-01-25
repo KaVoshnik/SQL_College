@@ -84,3 +84,25 @@ WHERE
       visit_date = '2022-01-07'
   );
 ```
+
+Day01_ex05:
+![img](/Day%201/img/day01_ex05.png)
+
+```sql
+SELECT
+    p.id AS person_id,
+    p.name AS person_name,
+    p.age,
+    p.gender,
+    p.address,
+    pi.id AS pizzeria_id,
+    pi.name AS pizzeria_name,
+    pi.rating
+FROM
+    person p
+CROSS JOIN
+    pizzeria pi
+ORDER BY
+    p.id,
+    pi.id;
+```
