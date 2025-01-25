@@ -1,4 +1,4 @@
-# Answers for tasks
+# Answers for day 00
 
 Day00_ex00:
 ![img](./tasks/img/day00_ex00.png)
