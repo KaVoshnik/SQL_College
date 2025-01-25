@@ -106,3 +106,43 @@ ORDER BY
     p.id,
     pi.id;
 ```
+
+Day01_ex06:
+![img](/Day%201/img/day01_ex06.png)
+
+```sql
+SELECT
+    p.name,
+    po.order_date AS action_date
+FROM
+    person p
+JOIN
+    person_order po ON p.id = po.id
+UNION ALL
+SELECT
+    p.name,
+    pv.visit_date AS action_date
+FROM
+    person p
+JOIN
+    person_visits pv ON p.id = pv.id
+ORDER BY
+    action_date ASC,
+    name DESC;
+```
+
+Day01_ex07:
+![img](/Day%201/img/day01_ex07.png)
+
+```sql
+SELECT
+    po.order_date,
+    CONCAT(p.name, ' (age:', p.age, ')') AS person_information
+FROM
+    person_order po
+JOIN
+    person p ON po.person_id = p.id
+ORDER BY
+    po.order_date ASC,
+    person_information ASC;
+```
